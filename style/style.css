@@ -1,0 +1,89 @@
+.html,body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: lightblue;
+}
+.mainGrid{
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr 1fr;
+    grid-template-rows: 3fr 3fr 3fr 3fr;
+    grid-template-areas: 
+    "img1 img1 img2 img3"
+    "img1 img1 img4 img3"
+    "img5 img6 img6 img3"
+    "img7 img8 img9 img3";
+    height: 100vh;
+
+}
+.mainGridForm{
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: 
+    "headerGrid headerGrid headerGrid"
+    ". mainFlex ."
+    "footerGrid footerGrid footerGrid";
+    height: 100vh;
+}
+.boxGridStyle{
+    background-color: orange;
+    color: white;
+    margin: 20px;
+    padding: 10px;
+    
+}
+.img1Grid{
+    grid-area: img1;
+}
+.img2Grid{
+    grid-area: img2;
+}
+.img3Grid{
+    grid-area: img3;
+}
+.img4Grid{
+    grid-area: img4;
+}
+.img5Grid{
+    grid-area: img5;
+}
+.img6Grid{
+    grid-area: img6;
+}
+.img7Grid{
+    grid-area: img7;
+}
+.img8Grid{
+    grid-area: img8;
+}
+.img9Grid{
+    grid-area: img9;
+}
+.headerFlex{
+    grid-area: headerGrid;
+}
+.headerStyle{
+    background-color: orange;
+}
+.mainFlex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-area: mainFlex;
+}
+.mainStyle{
+    margin: 2% auto; 
+    padding: 2%;
+    border: 5px solid orange;
+    border-radius: 50px; 
+    box-shadow:2% 2% 2% orange;
+}
+.footerFlex{
+    grid-area: footerGrid;
+}
+.footerStyle{
+    background-color: orange;
+}
