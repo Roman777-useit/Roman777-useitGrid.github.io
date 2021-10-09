@@ -66,6 +66,9 @@ body{
 }
 .headerFlex{
     grid-area: headerGrid;
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
 }
 .headerStyle{
     background-color: orange;
@@ -109,7 +112,26 @@ body{
 }
 .footerFlex{
     grid-area: footerGrid;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 2%;
+}
+.footerFlex ul{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    list-style-type: none;
+    
+}
+.footerFlex li{
+    margin-right: 1%;
+
+    
 }
 .footerStyle{
     background-color: orange;
+}
+#activeLink{
+    font-size: 1.5rem;
 }
